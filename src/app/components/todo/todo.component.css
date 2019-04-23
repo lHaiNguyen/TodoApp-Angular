@@ -1,0 +1,67 @@
+.todos{
+  position: relative;
+  border:1px solid #ededed;
+}
+.todos label{
+  word-break: break-all;
+  display: block;
+  line-height: 1.2;
+  transition: color 0.4s;
+  font-size: 24px;
+  background-image: url('../../../assets/images/downloadH.svg');
+  background-position: center left;
+  background-repeat: no-repeat;
+  display: block;
+  padding: 15px 15px 15px 60px;
+}
+
+.todos input{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 40px;
+  margin: auto 0;
+  -webkit-appearance: none;
+  height: 40px;
+  outline: none;
+  transition: 0.5s;
+  cursor: pointer;
+
+}
+.todos input:checked{
+  background-image: url('../../../assets/images/download.svg');
+  background-position: center left;
+  background-repeat: no-repeat;
+}
+.todos input:checked + label {
+  color: #d9d9d9;
+  text-decoration: line-through;
+}
+
+.showDeleteBtn{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto 0;
+  width: 40px;
+  -webkit-appearance: none;
+  color: palevioletred;
+  border: none;
+  background: none;
+  cursor: pointer;
+  height: 40px;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.4s all;
+  outline: none;
+}
+.showDeleteBtn::after{
+  content: 'x';
+  font-size: 24px;
+}
+
+.todos .showButton:hover .showDeleteBtn{
+  opacity: 1;
+  visibility: visible;
+}

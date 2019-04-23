@@ -1,0 +1,7 @@
+  <li [class]="'todos'" (mouseover)="onClassOver()" (mouseout)="onClassOut()">
+    <div [class.showButton] = "showButton">
+        <input type="checkbox" [value]="isDone" (change)="changeState()">
+        <label for="">{{ name }}</label>
+        <button class="showDeleteBtn" (click)=deleteData()></button>
+    </div>
+  </li>

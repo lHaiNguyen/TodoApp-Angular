@@ -1,0 +1,33 @@
+
+.container{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  margin: 0 auto;
+  align-items: center;
+}
+.content{
+  min-width: 500px;
+  max-width: 700px;
+  background: #fefefe;
+  box-shadow: 2px 1px 8px rgba(21,5,176,0.3);
+
+}
+.content .header{
+  border-bottom: 1px solid #ccc;
+}
+.content input[type="text"]{
+    width: 100%;
+    border: 0;
+  outline: none;
+  padding: 20px 0px 20px 50px;
+  font-size: 24px;
+font-weight: 500;
+
+}
+input[type="text"]::-webkit-input-placeholder {
+  color: rgb(211, 210, 210);
+  font-style: italic;
+}
